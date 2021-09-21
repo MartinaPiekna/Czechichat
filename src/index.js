@@ -79,8 +79,7 @@ const onSubmit = (event) => {
   })
     .then((response) => {
       /*
-    Server teoreticky mohl vrátit nějakou chybu, že zprávu neuložil. Ale v dokumentaci není napsané,jak chybu poznáme,
-    tak budeme serveru věřit, že když odpovídá, zprávu vždy přijme.
+    Server teoreticky mohl vrátit nějakou chybu, že zprávu neuložil. Ale v dokumentaci není napsané,jak chybu poznáme, tak budeme serveru věřit, že když odpovídá, zprávu vždy přijme.
     */
       messageInputElement.value = '';
       fetchMessagesAndShow();
